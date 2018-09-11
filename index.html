@@ -8,26 +8,25 @@
     <title>Inzspirit - Healing og Clairvoyance af Bethina Salina Serrani</title>
 </head>
 <body>
-    
+
 <header>
     <img class="logo" src="images/logo.svg" alt="">
-    <nav>
+    <nav class="main-nav">
         <ul>
-            <li>Forside</li>
-            <li>Behandlinger</li>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Behandlinger</a>
+        <ul class="dropdown">
+            <li><a href="#">Reiki & Krystal Healing</a></li>
+            <li><a href="#">Personlig udvikling</a></li>
+            <li><a href="#">Guidet meditation</a></li>
+            <li><a href="#">Clairvoyance</a></li>
+            <li><a href="#">Coaching</a></li>
         </ul>
-        <ul>
-            <li>Reiki & Krystal Healing</li>
-            <li>Personlig udvikling</li>
-            <li>Guidet meditation</li>
-            <li>Clairvoyance</li>
-            <li>Coaching</li>
-        </ul>
-        <ul>
-            <li>Bestil tid</li>
-            <li>Pris</li>
-            <li>Om mig</li>
-            <li>Kontakt</li>
+    </li>
+            <li><a href="#">Bestil tid</a></li>
+            <li><a href="#">Pris</a></li>
+            <li><a href="#">Om mig</a></li>
+            <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
 </header>
@@ -39,10 +38,12 @@
          <input type="radio" id="carousel-3" name="carousel[]">
             <input type="radio" id="carousel-4" name="carousel[]">
             <input type="radio" id="carousel-5" name="carousel[]">
-            <ul class="carousel__items">
-                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
-                <li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
-                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>               
+            <ul class="carousel__items">  
+                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt="">
+                <figcaption class="carousel-figcap"><h1>Healing & Clairvoyance</h1><p>Velkommen til min side</p></figcaption>
+                </li>
+                <li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""><figcaption class="carousel-figcap">hello test2</figcaption></li>
+                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""><figcaption class="carousel-figcap">hello test3</figcaption></li>               
             </ul>
          <div class="carousel__prev">
              <label for="carousel-1"></label>
@@ -66,9 +67,9 @@
     </section>
 
      <section class="image-grid">
-         <div><img src="" alt=""><a href=""></a></div>
-         <div><img src="" alt=""><a href=""></a></div>
-         <div><img src="" alt=""><a href=""></a></div>
+         <div><img src="images/stones.jpg" alt=""><a href=""></a></div>
+         <div><img src="/images/salina.jpg" alt=""><a href=""></a></div>
+         <div><img src="/images/bracelet.jpg" alt=""><a href=""></a></div>
      </section>
 
 
@@ -77,10 +78,11 @@
         <h2>Jeg tilbyder</h2>
         <p>Lorem ipsum dolor sit amet, feugiat et tellus, nec id suspendisse, rhoncus sed, viverra ut mollis phasellus sit mauris, pede tellus dictumst ut volutpat tellus. Consectetuer provident, risus ut et erat elit, turpis duis vel ac, leo consectetuer felis, rutrum lacinia nulla eros vestibulum sit. Id ut risus, mus arcu eu lorem velit, sit feugiat arcu vestibulum magna turpis, ad nonummy. Sit nisl posuere varius, eget id, maecenas elit quis aliquam fusce ut.
        </p>
-        <p>Augue phasellus ac eget vel libero fermentum, id eget amet nulla dictum eget iaculis, nullam per velit impedit, donec auctor amet morbi etiam, purus hac dui. </p>
+        <p>Augue phasellus ac eget vel libero fermentum, id eget amet nulla dictum eget iaculis, nullam per velit impedit, donec auctor amet morbi etiam, purus hac dui.</p>
     </section>
 
      <section id="testim" class="testim">
+         <h3>Udsagn fra mine kunder</h3>
         <!--         <div class="testim-cover"> -->
                     <div class="wrap">
         
@@ -132,7 +134,7 @@
             </section>
 
 
-            <footer>
+            <footer class="footer">
                 <div>
                     <h4>Kontakt</h4>
                     <p>Adresse: Ved fyret 73, Strib</p>

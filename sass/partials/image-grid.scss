@@ -1,0 +1,14 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+    margin: auto;
+    max-width: 1200px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+}

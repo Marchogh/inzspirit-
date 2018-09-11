@@ -192,16 +192,56 @@
           border-radius: 50%;
           cursor: pointer;
           margin: 0 .125%;
-          width: 20px;
-          height: 20px;
+          width: 15px;
+          height: 15px;
         }
       }
     }
   }
 
   .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 50px auto;
+    position: relative;
   }
   
   @include carousel(3);
+
+  .facebook {
+    background: $pink;
+    display: inline-block;
+    padding: 1em 2.1em;
+    transform: rotate(90deg);
+    position: absolute;
+
+    a {
+        color: $violet;
+        text-decoration: none;
+    }
+}
+
+
+.carousel-figcap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2em 5em;
+  text-align: center;
+
+  h1 {
+    font-family: $primary-font;
+    font-size: 4em;
+    color: $violet;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: #333;
+  }
+
+}
+
