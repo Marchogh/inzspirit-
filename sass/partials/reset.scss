@@ -1,6 +1,8 @@
 @font-face {
-  font-family: dogma;
-  src: url("../fonts/dogma.otf");
+  font-family: 'DogmaScript';
+  src: url("../fonts/dogma.woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /**
@@ -10,6 +12,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box;
   }
 
   *, *:before, *:after {

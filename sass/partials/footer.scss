@@ -1,3 +1,54 @@
+
 .footer {
     background: $pink;
+    padding: 40px 0;
+    .wrapper {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+
+        .footer__contact {
+            grid-column: 1 / 4;
+        }
+
+        .footer__center {
+            grid-column: 4 / 10;
+        }
+
+        .footer__links {
+            grid-column: 10 / 12;
+        }
+
+        .footer__links2 {
+            grid-column: 12 / 13;
+        }
+
+    }
+
+    h4 {
+        color: $violet;
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    &__logo {
+       width: 100%; 
+        
+    }
+
+    &__etc {
+        text-align: center;
+        font-size: 0.9em;
+        margin-top: 0;
+    }
+
+    &__copyright {
+        text-align: center;
+        margin: 0;
+        padding-top: 1.5em;
+    }
 }
+

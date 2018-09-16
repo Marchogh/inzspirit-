@@ -1,3 +1,10 @@
+let mobileBtn = document.querySelector('.mobile-menu'); 
+let menu = document.querySelector('.menu');
+
+    mobileBtn.addEventListener('click', () => {
+        menu.classList.toggle('open');
+      });
+
 // vars
 'use strict'
 var	testim = document.getElementById("testim"),
@@ -107,3 +114,6 @@ window.onload = function() {
 			
 		})
 }
+
+
+

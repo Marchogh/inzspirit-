@@ -8,11 +8,17 @@
     <title>Inzspirit - Healing og Clairvoyance af Bethina Salina Serrani</title>
 </head>
 <body>
+        
+        <div class="facebook">
+                <a href="">Facebook</a>
+            </div>
 
 <header>
+       <!-- <span class="close">&times;</span> -->
+<svg class="mobile-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M0 2h50v4H0zM0 16h50v4H0zM0 30h50v4H0zM0 44h50v4H0z"/></svg>
     <img class="logo" src="images/logo.svg" alt="">
     <nav class="main-nav">
-        <ul>
+        <ul class="menu">
             <li><a href="#">Forside</a></li>
             <li><a href="#">Behandlinger</a>
         <ul class="dropdown">
@@ -39,11 +45,11 @@
             <input type="radio" id="carousel-4" name="carousel[]">
             <input type="radio" id="carousel-5" name="carousel[]">
             <ul class="carousel__items">  
-                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt="">
-                <figcaption class="carousel-figcap"><h1>Healing & Clairvoyance</h1><p>Velkommen til min side</p></figcaption>
+                <li class="carousel__item">
+                <a href="#"><figcaption class="carousel-figcap"><h1>Healing & Clairvoyance</h1><p>Velkommen til min side</p></figcaption></a>
                 </li>
-                <li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""><figcaption class="carousel-figcap">hello test2</figcaption></li>
-                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""><figcaption class="carousel-figcap">hello test3</figcaption></li>               
+                <li class="carousel__item"><figcaption class="carousel-figcap">hello test2</figcaption></li>
+                <li class="carousel__item"><figcaption class="carousel-figcap">hello test3</figcaption></li>               
             </ul>
          <div class="carousel__prev">
              <label for="carousel-1"></label>
@@ -61,9 +67,6 @@
            <label for="carousel-3"></label>
          </div>
        </div>
-       <div class="facebook">
-        <a href="">Facebook</a>
-    </div>
     </section>
 
      <section class="image-grid">
@@ -82,7 +85,7 @@
     </section>
 
      <section id="testim" class="testim">
-         <h3>Udsagn fra mine kunder</h3>
+         <h3>Anbefalinger fra mine kunder</h3>
         <!--         <div class="testim-cover"> -->
                     <div class="wrap">
         
@@ -135,20 +138,21 @@
 
 
             <footer class="footer">
-                <div>
+                <div class="wrapper">
+                <div class="footer__contact">
                     <h4>Kontakt</h4>
                     <p>Adresse: Ved fyret 73, Strib</p>
                     <p>5500 Middelfart</p>
-                    <p>Telefon:</p>
-                    <p>Mail:</p>
-                    <p>CVR:</p>
+                    <p>Telefon: 2222 2222</p>
+                    <p>Mail: inzspirit@mail.dk</p>
+                    <p>CVR: 3333333</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Sitemap</p>
-                    <p>Forretningsbetingelser</p>
+                <div class="footer__center">
+                    <img class="footer__logo" src="/images/logo.svg" alt="">
+                    <p class="footer__etc">Sitemap</p>
+                    <p class="footer__etc">Forretningsbetingelser</p>
                 </div>
-                <div>
+                <div class="footer__links">
                     <h4>Links</h4>
                     <p>Reiki & Krystal Healing</p>
                     <p>Personlig udvikling</p>
@@ -156,10 +160,14 @@
                     <p>Clairvoyance</p>
                     <p>Coaching</p>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
+                <div class="footer__links2">
+                    <p>Pris</p>
+                    <p>Om mig</p>
+                    <p>Bestil tid</p>
+                    <p>Kontakt</p>
                 </div>
+            </div>
+            <p class="footer__copyright">Copyright - Inzspirit &#169;</p>
             </footer>
 
 
@@ -167,7 +175,5 @@
 
 
             <script src="js/main.js"></script>
-            <script src="https://use.fontawesome.com/1744f3f671.js"></script>
-    
 </body>
 </html>
