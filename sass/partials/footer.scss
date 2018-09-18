@@ -1,7 +1,6 @@
-
 .footer {
     background: $pink;
-    padding: 40px 0;
+    padding: 40px 40px;
     .wrapper {
         max-width: 1200px;
         display: grid;
@@ -9,7 +8,8 @@
         justify-items: center;
         align-items: end;
         margin: 0 auto;
-
+        grid-gap: 20px;
+    
         .footer__contact {
             grid-column: 1 / 4;
         }
@@ -74,3 +74,26 @@
 
 }
 
+@media only screen and (max-width: 1000px) {
+    .footer {
+        padding: 0 30vw;
+        text-align: center;
+
+        .footer__copyright {
+            padding-bottom: 25px;
+         }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            
+
+        }
+    }
+}
