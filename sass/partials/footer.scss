@@ -28,6 +28,10 @@
 
     }
 
+    p {
+        font-size: 0.9em;
+    }
+
     h4 {
         color: $violet;
         font-size: 1.2em;
@@ -41,7 +45,7 @@
 
     &__etc {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 0.85em;
         margin-top: 0;
     }
 
@@ -63,7 +67,7 @@
     ul li a {
         text-decoration: none;
         color: #333;
-        font-size: 1.1em;
+        font-size: 0.9em;
         display: block; 
         margin: 16px 0;
     }
