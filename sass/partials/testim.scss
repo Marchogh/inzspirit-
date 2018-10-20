@@ -585,6 +585,14 @@
 	
 	.testim .cont div p {
 		line-height: 25px;
-	}
+    }
+    
+    .testim .arrow.right {
+        right: 30px;
+    }
+
+    .testim .arrow.left {
+        left: 30px;
+    }
 
 }
