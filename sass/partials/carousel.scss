@@ -257,19 +257,21 @@
 }
 
 .carousel__item:first-child {
-  background: url(//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG);
+  background: url('/images/strand-blå.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .carousel__item:nth-child(2) {
-  background: url(//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg);
+  background: url('/images/vand.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .carousel__item:last-child {
-  background: url(//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg);
+  background: url('/images/storebælt.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
