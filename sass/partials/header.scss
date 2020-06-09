@@ -105,13 +105,14 @@
             max-width: 25px;
             position: fixed;
             top: 35px;
-            right: 50px;
+            right: 25px;
             z-index: 11;
         }
 
         .logo {
-           margin: 0 0 0 20px;
+           margin: 0 0 0 25px !important;
            width:30vw;
+           display: inline;
         }
 
         .hidden {
