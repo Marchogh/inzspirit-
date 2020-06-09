@@ -28,6 +28,10 @@
   }
 }
 
+.text-offer {
+      margin-left: 5em;
+}
+
 @media (max-width: 800px) {
   .offer {
     padding: 50px 0;
@@ -35,6 +39,15 @@
     margin: 0 auto;
     display: block;
     text-align: center;
+  }
+
+  .offer-text {
+    
+    p {
+      margin-left: 0;
+      width: 100%;
+      text-align: initial;
+    }
   }
 
   h2 {
