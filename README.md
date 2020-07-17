@@ -1,3 +1,3 @@
 # inzspirit-
 
-https://marchogh.github.io/inzspirit-/
+https://inzspirit.netlify.app/
