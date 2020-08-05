@@ -119,6 +119,11 @@
       pointer-events: none;
     }
 
+    .dropdown-hidden {
+      opacity: 0;
+      display: none;
+    }
+
     .main-nav {
       ul {
         flex-direction: column;
@@ -156,7 +161,7 @@
         min-width: 5rem;
         transition: all 0.3s ease;
         margin-top: 4rem;
-        opacity: 0;
+        display: none;
         z-index: -10;
         padding-left: 0;
         width: 50vw;
@@ -165,7 +170,6 @@
 
       ul li:hover > ul,
       ul li ul:hover {
-        opacity: 1;
         display: block;
         z-index: 1;
       }
@@ -181,5 +185,9 @@
     transform: translateX(0);
     opacity: 1;
     position: fixed;
+  }
+
+  .dropdown-open {
+    opacity: 1;
   }
 }
