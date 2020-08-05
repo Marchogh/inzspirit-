@@ -1,82 +1,85 @@
 .logo {
-    max-width: 200px;
-    display: block;
-    margin: auto;
-    padding: 30px 0;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+  padding: 30px 0;
 }
 
 .main-nav {
-    
-    ul {
-        list-style: none;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }     
+  ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 
-    li {
-        padding: 1rem;
-    }
+  li {
+    padding: 1rem;
+  }
 
-    a {
-        text-decoration: none;
-        color: #333;
-    }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
 
-    a:hover {
-        color: $pink;
-    }
+  a:hover {
+    color: white;
+  }
 
-    li:hover,
-    li:focus-within {   
-	cursor: pointer;
-    }
+  li:hover,
+  li:focus-within {
+    cursor: pointer;
+  }
 
-    li:focus-within a {
-     outline: none;
-    }   
+  li:focus-within a {
+    outline: none;
+  }
 
-    ul li ul {
-        background: #333;
-        min-width: 5rem;
-        position: absolute;
-        transition: all 0.3s ease;
-        display: none;
-        margin-top: 1rem;
-        opacity: 0;
-        z-index: 2;
-        padding-left: 0;
-    }
-    ul li ul a {
-        color: #fff;
-    }
-   
-    ul li:hover > ul,
-    ul li ul:hover {
-      opacity: 1;
-      display: block;
-      
-    }
-    
-    ul li ul li {
-        clear: both;
-        width: 100%;
-      }
+  ul li ul {
+    background: $pink;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.3s ease;
+    display: none;
+    margin-top: 1rem;
+    opacity: 0;
+    z-index: 2;
+    padding-left: 0;
+  }
+  ul li ul a {
+    color: #333;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+}
+
+.submenu {
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .main-nav::before {
-    display: block;
-    content: '';
-    width: 80%;
-    height: 2px;
-    background: $pink;
-    margin: 0 auto;
-    opacity: 0.7;
-  }
+  display: block;
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: $pink;
+  margin: 0 auto;
+  opacity: 0.7;
+}
 
 .main-nav::after {
   display: block;
-  content: '';
+  content: "";
   width: 80%;
   height: 2px;
   background: $pink;
@@ -85,102 +88,98 @@
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
 .arrow-down:after {
-    content: url(/images/arrow-down.svg);
-    padding-left: 5px;
+  content: url(/images/arrow-down.svg);
+  padding-left: 5px;
 }
 
-
-// Responsiv nav 
+// Responsiv nav
 @media (max-width: 800px) {
-  
-    header {
-
-        .mobile-menu {
-            color: #333;
-            display: block;
-            max-width: 25px;
-            position: fixed;
-            top: 35px;
-            right: 25px;
-            z-index: 11;
-        }
-
-        .logo {
-           margin: 0 0 0 25px !important;
-           width:30vw;
-           display: inline;
-        }
-
-        .hidden {
-            pointer-events: none;
-        }
-
-        .main-nav {
-            ul {
-                flex-direction: column;
-                background: $pink;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 10;
-                margin-top: 0;
-                width: 100vw;
-                opacity: 0;
-                transition: all 250ms ease-in-out;
-            }
-
-            li {
-                width: 50%;
-                position: relative;
-            }
-
-            a:hover {
-                color: white;
-            }
-        
-            li:hover,
-            li:focus-within {   
-            cursor: pointer;
-            }
-        
-            li:focus-within a {
-             outline: none;
-            }   
-        
-            ul li ul {
-                background: #333;
-                min-width: 5rem;
-                transition: all 0.3s ease;
-                margin-top: 4rem;
-                opacity: 0;
-                z-index: -10;
-                padding-left: 0;
-                width: 50vw;
-                font-size: 1em;
-            }
-          
-            ul li:hover > ul,
-            ul li ul:hover {
-              opacity: 1;
-              display: block;
-              z-index: 1;
-            }
-        }
-
-        .main-nav::before, .main-nav::after {
-            display: none;
-        }
-
+  header {
+    .mobile-menu {
+      color: #333;
+      display: block;
+      max-width: 25px;
+      position: fixed;
+      top: 35px;
+      right: 25px;
+      z-index: 11;
     }
 
-    .menu.open {
-        transform: translateX(0);
-        opacity: 1;
-        position: fixed;
+    .logo {
+      margin: 0 0 0 25px !important;
+      width: 30vw;
+      display: inline;
+    }
+
+    .hidden {
+      pointer-events: none;
+    }
+
+    .main-nav {
+      ul {
+        flex-direction: column;
+        background: $pink;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        margin-top: 0;
+        width: 100vw;
+        opacity: 0;
+        transition: all 250ms ease-in-out;
       }
 
+      li {
+        width: 50%;
+        position: relative;
+      }
+
+      a:hover {
+        color: #444;
+      }
+
+      li:hover,
+      li:focus-within {
+        cursor: pointer;
+      }
+
+      li:focus-within a {
+        outline: none;
+      }
+
+      ul li ul {
+        border: 1px solid white;
+        min-width: 5rem;
+        transition: all 0.3s ease;
+        margin-top: 4rem;
+        opacity: 0;
+        z-index: -10;
+        padding-left: 0;
+        width: 50vw;
+        font-size: 1em;
+      }
+
+      ul li:hover > ul,
+      ul li ul:hover {
+        opacity: 1;
+        display: block;
+        z-index: 1;
+      }
+    }
+
+    .main-nav::before,
+    .main-nav::after {
+      display: none;
+    }
   }
+
+  .menu.open {
+    transform: translateX(0);
+    opacity: 1;
+    position: fixed;
+  }
+}

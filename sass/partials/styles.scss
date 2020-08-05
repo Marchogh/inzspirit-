@@ -1,9 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 
 // Fonts
-$primary-font: 'Dogma Script';
+$primary-font: "Dogma Script";
 
-// Colors 
+// Colors
 $violet: #303257;
-$pink: #F2E6E4;
+$pink: #f2e6e4;
 
+.center {
+  display: flex;
+  margin: auto;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.inline-text {
+  display: inline-block;
+}
