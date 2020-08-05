@@ -19,3 +19,13 @@ $pink: #f2e6e4;
 .inline-text {
   display: inline-block;
 }
+
+@media (max-width: 800px) {
+  .center {
+    width: 100%;
+  }
+
+  .text-end {
+    margin-right: 15px;
+  }
+}
