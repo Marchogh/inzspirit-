@@ -20,5 +20,6 @@ dropdownBtn.addEventListener("click", () => {
     dropdown.classList.remove("dropdown-hidden");
   } else {
     dropdown.style.opacity = "0";
+    dropdown.style.zIndex = "-1";
   }
 });
