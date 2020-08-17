@@ -1,3 +1,3 @@
 # inzspirit-
 
-https://inzspirit.netlify.app/
+https://inzspirit.dk/
